@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">CardReader Test</string>
-    <string name="btRead">Lire l\'applet de test</string>
-    <string name="nfc_unavailable">Pas de NFC disponible</string>
-    <string name="nfc_not_activated">Il faut activer le NFC</string>
-    <string name="non_iso">La carte n\'est pas ISO14443</string>
-    <string name="iso_connect_error">Impossible de se connecter à la carte ISO14443</string>
-    <string name="iso_read_error">Erreur de lecture carte ISO14443</string>
-    <string name="txtId">Card ID</string>
+    <string name="app_name" translatable="false">CardReader Example</string>
+    <string name="btRead">Read test applet</string>
+    <string name="nfc_unavailable">NFC is unavailable</string>
+    <string name="nfc_not_activated">You must enable NFC</string>
+    <string name="non_iso">This card is not ISO14443 compatible</string>
+    <string name="iso_read_error">Error reading ISO14443 card</string>
+    <string name="txtId">ID de la carte</string>
     <string name="txtSelect">Select Response</string>
     <string name="txtIncrement">Increment Response</string>
+    <string name="iso_connect_error">Unable to connect to the ISO14443 card</string>
 </resources>
