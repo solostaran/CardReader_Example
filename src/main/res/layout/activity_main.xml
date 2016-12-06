@@ -27,44 +27,87 @@
         android:layout_alignTop="@+id/txtId"
         android:layout_toRightOf="@+id/txtId"
         android:layout_toEndOf="@+id/txtId"
-        android:editable="false"/>
+        android:focusable="false"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/txtSelect"
+        android:text="@string/txtSelectResponse"
         android:layout_below="@+id/editId"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/txtSelect"/>
+        android:id="@+id/txtSelectResponse"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editSelect"
-        android:layout_alignTop="@+id/txtSelect"
-        android:layout_toRightOf="@+id/txtSelect"
-        android:layout_toEndOf="@+id/txtSelect"
-        android:editable="false"/>
+        android:id="@+id/editSelectResponse"
+        android:layout_alignTop="@+id/txtSelectResponse"
+        android:layout_toRightOf="@+id/txtSelectResponse"
+        android:layout_toEndOf="@+id/txtSelectResponse"
+        android:focusable="false"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/txtIncrement"
-        android:layout_below="@+id/editSelect"
+        android:text="@string/txtIncrementResponse"
+        android:layout_below="@+id/editSelectResponse"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/txtIncrement"/>
+        android:id="@+id/txtIncrementResponse"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editIncrement"
-        android:layout_alignTop="@+id/txtIncrement"
-        android:layout_toRightOf="@+id/txtIncrement"
-        android:layout_toEndOf="@+id/txtIncrement"
-        android:editable="false"/>
+        android:id="@+id/editIncrementResponse"
+        android:layout_alignTop="@+id/txtIncrementResponse"
+        android:layout_toRightOf="@+id/txtIncrementResponse"
+        android:layout_toEndOf="@+id/txtIncrementResponse"
+        android:focusable="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/txtAmount"
+        android:layout_below="@+id/editIncrementResponse"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtAmount"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:maxLength="12"
+        android:ems="12"
+        android:id="@+id/editAmount"
+        android:layout_alignTop="@+id/txtAmount"
+        android:layout_toRightOf="@+id/txtAmount"
+        android:layout_toEndOf="@+id/txtAmount"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/txtAmountResponse"
+        android:layout_below="@+id/editAmount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtAmountResponse"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAmountResponse"
+        android:layout_alignTop="@+id/txtAmountResponse"
+        android:layout_toRightOf="@+id/txtAmountResponse"
+        android:layout_toEndOf="@+id/txtAmountResponse"
+        android:focusable="false"
+        />
 
 </RelativeLayout>

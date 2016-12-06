@@ -6,7 +6,9 @@
     <string name="non_iso">This card is not ISO14443 compatible</string>
     <string name="iso_read_error">Error reading ISO14443 card</string>
     <string name="txtId">ID de la carte</string>
-    <string name="txtSelect">Select Response</string>
-    <string name="txtIncrement">Increment Response</string>
+    <string name="txtSelectResponse">Select Response</string>
+    <string name="txtIncrementResponse">Increment Response</string>
     <string name="iso_connect_error">Unable to connect to the ISO14443 card</string>
+    <string name="txtAmount">Amount</string>
+    <string name="txtAmountResponse">Amount Response</string>
 </resources>

@@ -233,7 +233,19 @@ public static byte[] convertUTF8StringToByteArray(String s) {
         return ret;
     }
     
-    // CUSTOM ADJUNCTION
+    // CUSTOM CODE
+
+    /**
+     * Long to HexString in Big Indian form
+     */
+    public static String convertLongToHexString(long l) {
+        final byte [] tab = new byte[4];
+        tab[3] = (byte)l;
+        tab[2] = (byte)(l >> 8);
+        tab[1] = (byte)(l >> 16);
+        tab[0] = (byte)(l >> 24);
+        return convertByteArrayToHexString(tab);
+    }
     
     /**
 	 * Find the correct coding of a URI payload and decode it.<br/>
@@ -265,6 +277,17 @@ public static byte[] convertUTF8StringToByteArray(String s) {
             if (text.charAt(i) == ' ') {
                 text.deleteCharAt(i);
                 len--;
+            }
+        }
+        return text.toString();
+    }
+
+    public static String addSpaces(String str, int interval) {
+        StringBuffer text = new StringBuffer(str);
+        int nb = text.length();
+        for (int i=0, j=0; j < nb; i++,j++) {
+            if (j % interval == 0) {
+                text.insert(i++, ' ');
             }
         }
         return text.toString();

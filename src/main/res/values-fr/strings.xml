@@ -7,6 +7,8 @@
     <string name="nfc_unavailable">Pas de NFC disponible</string>
     <string name="non_iso">La carte n\'est pas ISO14443</string>
     <string name="txtId">Card ID</string>
-    <string name="txtIncrement">Réponse à l\'incrément</string>
-    <string name="txtSelect">Réponse au Select</string>
+    <string name="txtIncrementResponse">Réponse à l\'incrément</string>
+    <string name="txtSelectResponse">Réponse au Select</string>
+    <string name="txtAmount">Montant</string>
+    <string name="txtAmountResponse">Réponse transaction</string>
 </resources>
