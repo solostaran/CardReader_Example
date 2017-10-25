@@ -60,9 +60,10 @@ public class NfcThread implements Runnable {
 
         try {
 
+            //********************* ECHANGES AVEC LA CARTE ************************************
             Date begin = new Date();
 
-            String ret = send_apdu("00 A4 04 00 09 F1 01 02 03 04 48 43 45 01 00");
+            String ret = send_apdu("00 A4 04 00 09 F1 01 02 03 04 48 43 45 02 00");
             cb.setEditText(R.id.editSelectResponse, ret);
 
             ret = send_apdu("00 10 00 00");
@@ -74,6 +75,7 @@ public class NfcThread implements Runnable {
             cb.setEditText(R.id.editAmountResponse, ret);
 
             Date end = new Date();
+            //*********************************************************************************
 
         } catch (IOException e) {
             cb.showMessage(context.getString(R.string.iso_read_error));

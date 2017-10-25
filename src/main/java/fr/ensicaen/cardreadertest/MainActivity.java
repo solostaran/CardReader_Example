@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
             showMessage(getString(R.string.nfc_not_activated));
             return;
         }
+
+        // *************************************** NFC READER ***********************************************
         // register broadcast receiver
         IntentFilter filter = new IntentFilter(
                 NfcAdapter.ACTION_ADAPTER_STATE_CHANGED);
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         // listen for type A tags/smartcards, skipping ndef check
         adapter.enableReaderMode(this, this, NfcAdapter.FLAG_READER_NFC_A
                 | NfcAdapter.FLAG_READER_SKIP_NDEF_CHECK, null);
+        // **************************************************************************************************
 
         // NDEF Tags
 //        adapter.enableForegroundDispatch(this, nfcintent, null, nfctechfilter);
@@ -88,8 +91,10 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         // NDEF Tags
 //        adapter.disableForegroundDispatch(this);
 
+        // *************************************** NFC READER ***********************************************
         unregisterReceiver(mBroadcastReceiver);
         adapter.disableReaderMode(this);
+        // **************************************************************************************************
     }
 
     // NDEF Tags
@@ -123,6 +128,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         });
     }
 
+    // *************************************** NFC READER ***********************************************
     private final BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver() {
         //        @SuppressWarnings("deprecation")
         @Override
@@ -165,6 +171,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         Runnable nfcr = new NfcThread(this, tag, this, getAmount());
         new Thread(nfcr).start();
     }
+    // **************************************************************************************************
 
     private String getAmount() {
         String mnt = editAmount.getText().toString();
