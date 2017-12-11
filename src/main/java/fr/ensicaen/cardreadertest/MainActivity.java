@@ -14,7 +14,7 @@ import android.util.Log;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import example.utils.StringUtils;
+import com.example.utils.StringUtils;
 
 /**
  * @link old version : http://www.java2s.com/Open-Source/Android_Free_Code/NFC/reader/org_docrj_smartcard_readerReaderActivity_java.htm

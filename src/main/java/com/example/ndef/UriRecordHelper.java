@@ -30,12 +30,12 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package example.ndef;
+package com.example.ndef;
 
 
 import android.annotation.SuppressLint;
 
-import example.utils.StringUtils;
+import com.example.utils.StringUtils;
 
 import java.util.Arrays;
 

@@ -8,9 +8,9 @@ import android.util.Log;
 import java.io.IOException;
 import java.util.Date;
 
-import static example.utils.StringUtils.convertByteArrayToHexString;
-import static example.utils.StringUtils.convertHexStringToByteArray;
-import static example.utils.StringUtils.removeSpaces;
+import static com.example.utils.StringUtils.convertByteArrayToHexString;
+import static com.example.utils.StringUtils.convertHexStringToByteArray;
+import static com.example.utils.StringUtils.removeSpaces;
 
 /**
  * Created by Joan on 09/12/2015.
