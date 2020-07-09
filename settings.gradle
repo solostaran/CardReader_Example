@@ -1,0 +1,2 @@
+include ':cardreader_example'
+rootProject.name = "CardReader_Example"
